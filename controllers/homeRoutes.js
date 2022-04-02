@@ -2,6 +2,8 @@ const router = require('express').Router();
 const { User } = require('../models');
 const withAuth = require('../utils/auth');
 
+// this will put the select (homepage) page on home
+
 router.get('/', async (req, res) => {
   try {
   
@@ -33,6 +35,34 @@ router.get('/addExcersise', (req, res) => {
   res.render('addExcersise');
 });
 
+router.get('/history', (req, res) => {
+  // If the user is already logged in, redirect the request to another route
+  if (req.session.logged_in) {
+    res.redirect('/select');
+    return;
+  }
+  res.render('history');
+});
+
+// bring in progress page
+router.get('/progress', (req, res) => {
+  // If the user is already logged in, redirect the request to another route
+  if (req.session.logged_in) {
+    res.redirect('/select');
+    return;
+  }
+  res.render('progress');
+});
+
+// bring in dashboard page
+router.get('/dashboard', (req, res) => {
+  // If the user is already logged in, redirect the request to another route
+  if (req.session.logged_in) {
+    res.redirect('/select');
+    return;
+  }
+  res.render('dashboard');
+});
 
 
 module.exports = router;
