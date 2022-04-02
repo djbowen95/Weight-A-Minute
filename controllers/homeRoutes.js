@@ -4,28 +4,39 @@ const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
-    // Get all projects and JOIN with user data
-    // const projectData = await Project.findAll({
-    //   include: [
-    //     {
-    //       model: User,
-    //       attributes: ['name'],
-    //     },
-    //   ],
-    // });
-
-    // Serialize data so the template can read it
-    // const projects = projectData.map((project) => project.get({ plain: true }));
-
+  
     // Pass serialized data and session flag into template
-    res.render('select', {  
+    res.render('select',  {  
       logged_in: req.session.logged_in 
     });
   } catch (err) {
     console.log(err)
     res.status(500).json(err);
   }
+
 });
+router.get('/signUp', (req, res) => {
+  // If the user is already logged in, redirect the request to another route
+  if (req.session.logged_in) {
+    res.redirect('/select');
+    return;
+  }
+  res.render('signUp');
+});
+
+router.get('/addExcersise', (req, res) => {
+  // If the user is already logged in, redirect the request to another route
+  if (req.session.logged_in) {
+    res.redirect('/select');
+    return;
+  }
+  res.render('addExcersise');
+});
+
+
+
+module.exports = router;
+
 
 // router.get('/project/:id', async (req, res) => {
 //   try {
@@ -69,14 +80,3 @@ router.get('/', async (req, res) => {
 //   }
 // });
 
-// router.get('/login', (req, res) => {
-//   // If the user is already logged in, redirect the request to another route
-//   if (req.session.logged_in) {
-//     res.redirect('/profile');
-//     return;
-//   }
-
-//   res.render('login');
-// });
-
-module.exports = router;
