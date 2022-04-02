@@ -20,7 +20,7 @@ router.get('/', async (req, res) => {
 router.get('/signUp', (req, res) => {
   // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
-    res.redirect('/select');
+    res.redirect('/');
     return;
   }
   res.render('signUp');
@@ -63,6 +63,42 @@ router.get('/dashboard', (req, res) => {
   }
   res.render('dashboard');
 });
+
+router.get('/aboutme', (req, res) => {
+  // If the user is already logged in, redirect the request to another route
+  if (req.session.logged_in) {
+    res.redirect('/select');
+    return;
+  }
+  res.render('aboutme');
+});
+
+router.get('/profile', (req, res) => {
+  // if (req.session.logged_in) {
+  //   res.redirect('/');
+  //   return;
+  // }
+  console.log("pooooo")
+  res.render('profile');
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 module.exports = router;
