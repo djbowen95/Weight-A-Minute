@@ -4,13 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Weight IT</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="plugins/themefisher-font/style.css">
-	<!-- bootstrap.min css -->
-	<link rel="stylesheet" href="plugins/bootstrap/dist/css/bootstrap.min.css">
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="plugins/animate-css/animate.css">
-	<!-- Magnific popup css -->
-	<link rel="stylesheet" href="plugins/magnific-popup/dist/magnific-popup.css">
+
 	<!-- Main Stylesheet -->
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -26,25 +20,42 @@
 
         <nav class="collapse navbar-collapse navbar-right" role="Navigation">
             <ul id="nav" class="nav navbar-nav navigation-menu">
-                <li><a data-scroll href="#body">🏠</a></li>
+                <li><a data-scroll href="/">🏠</a></li>
 				<li><a href="#settings">⚙️</a></li>
 				<li><a href="#information">ℹ️ </a></li>
 				<li><a href="#tutorial">▶️</a></li>
-				<li><a data-toggle="modal" data-target="#login">LOG IN/SIGN UP</a></li>
+				{{!-- <li><a data-toggle="modal-container" data-target="#login">LOG IN/SIGN UP</a></li> --}}
+				
 				<!-- add in my profile if logged in -->
 	{{#if logged_in}}
 				 <a href="/profile">🧑</a> |
 				 <button class="no-button" id="logout">logout</button>
 				 {{else}}
-				 <a href="/login">login</a>
+				 <a href="/signUp">Sign Up</a>
 				 {{/if}}
             </ul>
         </nav>
 
       </div>
   </header>
-
-
+	    
+{{{ body }}}
+		<!-- 
+		Essential Scripts
+		=====================================-->
+		
+		<!-- Main jQuery -->
+		<script type="text/javascript" src="plugins/jquery/dist/jquery.min.js"></script>
+		<!-- Bootstrap 3.1 -->
+		<script type="text/javascript" src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+		<!-- Slick Carousel -->
+		<script type="text/javascript" src="plugins/slick-carousel/slick/slick.min.js"></script>
+		<!-- Magnific popup -->
+		<script type="text/javascript" src="plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+		<!-- Custom js -->
+		<script type="text/javascript" src="js/script.js"></script>
+    </body>
+	
 <footer id="footer" class="bg-one">
 	<div class="container">
 		<div class="row wow fadeInUp" data-wow-duration="500ms">
@@ -66,22 +77,12 @@
 		</div> 
 	</div> 
 </footer> 
-	    
-{{{ body }}}
-		<!-- 
-		Essential Scripts
-		=====================================-->
-		
-		<!-- Main jQuery -->
-		<script type="text/javascript" src="plugins/jquery/dist/jquery.min.js"></script>
-		<!-- Bootstrap 3.1 -->
-		<script type="text/javascript" src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
-		<!-- Slick Carousel -->
-		<script type="text/javascript" src="plugins/slick-carousel/slick/slick.min.js"></script>
-		<!-- Magnific popup -->
-		<script type="text/javascript" src="plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
-		<!-- Custom js -->
-		<script type="text/javascript" src="../public/js/script.js"></script>
-    </body>
+	<link rel="stylesheet" href="plugins/themefisher-font/style.css">
+	<!-- bootstrap.min css -->
+	<link rel="stylesheet" href="plugins/bootstrap/dist/css/bootstrap.min.css">
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="plugins/animate-css/animate.css">
+	<!-- Magnific popup css -->
+	<link rel="stylesheet" href="plugins/magnific-popup/dist/magnific-popup.css">
 
 	</html>

@@ -600,25 +600,24 @@ a:hover {
 
 /* Login */
 .modal-header {
-height: 30rem;
 background-color: red;
 }
 
 
-.form-input {
+/* .form-input {
   margin-left:25px;
-}
+} */
 
 .boxes {
   padding-right: 30px;
 }
 form {
-  width: 100%;
+  width: 50%;
 }
 
 form .form-group {
   display: block;
-  width: 100%;
+  width: 50%;
   margin: 0.625rem 0;
 }
 
