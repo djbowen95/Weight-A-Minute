@@ -616,7 +616,11 @@ background-color: red;
 form {
   width: 50%;
 }
+.list-inline{
+  display:flex;
+  flex-direction: row;
 
+}
 form .form-group {
   display: block;
   width: 50%;
