@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS WeightAMinute_db;
+CREATE DATABASE WeightAMinute_db;
