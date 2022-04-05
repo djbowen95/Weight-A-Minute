@@ -1,94 +1,108 @@
-<!DOCTYPE html>
 <html>
-<head>
-	<meta  content="text/html; charset=UTF-8">
-	<title>Weight IT</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta content="text/html; charset=UTF-8" />
+    <title>Weight IT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<!-- bootstrap.min css -->
-	   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" type="text/css"/>
-	 <link href="/bootstrap/dist/css/bootstrap.min.css" type="text/css"/>
-	 <!-- Animate.css -->
-	{{!-- <link href="plugins/animate-css/animate.css" type="text/css"/> --}}
-	<!-- Magnific popup css -->
-	{{!-- <link href="plugins/magnific-popup/dist/magnific-popup.css" type="text/css"/> --}}
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-	<link rel="stylesheet" href="/css/style.css">
-</head>
+    <!-- Animate.css -->
+    {{! <link href="plugins/animate-css/animate.css" type="text/css"/> }}
+    <!-- Magnific popup css -->
+    {{! <link href="plugins/magnific-popup/dist/magnific-popup.css" type="text/css"/> }}
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
 
-<body id="body" data-spy="scroll" data-target=".navbar" data-offset="50">
+  <body id="body" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-	<!-- nav -->
-	<header id="navigation" class="navbar navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand logo" href="#body"></a>
+    <!-- nav -->
+    <header id="navigation" class="navbar navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand logo" href="#body"></a>
         </div>
+        {{!-- <nav class="collapse navbar-collapse navbar-right" role="Navigation"> --}}
+          <ul id="nav" class="nav navbar-nav navigation-menu">
+            <li><a data-scroll href="/">🏠</a></li>
+            <li><a href="#settings">⚙️</a></li>
+            <li><a href="/aboutme">ℹ️ </a></li>
+            <li><a href="#tutorial">▶️</a></li>
+            {{! <li><a data-toggle="modal-container" data-target="#login">LOG IN/SIGN UP</a></li> }}
 
-        <nav class="collapse navbar-collapse navbar-right" role="Navigation">
-            <ul id="nav" class="nav navbar-nav navigation-menu">
-                <li><a data-scroll href="/">🏠</a></li>
-				<li><a href="#settings">⚙️</a></li>
-				<li><a href="/aboutme">ℹ️ </a></li>
-				<li><a href="#tutorial">▶️</a></li>
-				{{!-- <li><a data-toggle="modal-container" data-target="#login">LOG IN/SIGN UP</a></li> --}}
-				
-				<!-- add in my profile if logged in -->
-	{{#if logged_in}}
-				 <a href="/profile">🧑</a> |
-				 <button class="no-button" id="logout">logout</button>
-				 {{else}}
-				 <a href="/signUp">Sign Up/Log In</a>
-				 {{/if}}
-            </ul>
+            <!-- add in my profile if logged in -->
+            {{#if logged_in}}
+              <a href="/profile">🧑</a>
+              |
+              <button class="no-button" id="logout">logout</button>
+            {{else}}
+              <a href="/signUp">Sign Up/Log In</a>
+            {{/if}}
+          </ul>
         </nav>
 
       </div>
-  </header>
-	    
-{{{ body }}}
-		<!-- 
+    </header>
+
+    {{{body}}}
+    <!-- 
 		Essential Scripts
 		=====================================-->
-		
-		<!-- Main jQuery -->
-		{{!-- <script type="text/javascript" src="/meghna-premium/plugins/bootstrap/dist/js/bootstrap.js"></script>
+
+    <!-- Main jQuery -->
+    {{! <script type="text/javascript" src="/meghna-premium/plugins/bootstrap/dist/js/bootstrap.js"></script>
 		<!-- Bootstrap 3.1 -->
 		<script type="text/javascript" src="/meghna-premium/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
 		<!-- Slick Carousel -->
 		<script type="text/javascript" src="/meghna-premium/plugins/slick-carousel/slick/slick.min.js"></script>
 		<!-- Magnific popup -->
-		<script type="text/javascript" src="/meghna-premium/plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>  --}}
-		<!-- Custom js -->
- <script type="text/javascript" src="/js/script.js"></script>
-  
-	
-<footer id="footer" class="bg-one">
-	<div class="container">
-		<div class="row wow fadeInUp" data-wow-duration="500ms">
-			<div class="col-lg-12">
-				<div class="social-icon">
-					<ul class="list-inline">
-						<li><a href="https://facebook.com/themefisher"><i class="tf-ion-social-facebook"></i></a></li>
-						<li><a href="https://twitter.com/themefisher"><i class="tf-ion-social-twitter"></i></a></li>
-						<li><a href="https://www.youtube.com/channel/UCx9qVW8VF0LmTi4OF2F8YdA"><i class="tf-ion-social-youtube"></i></a></li>
-						<li><a href="https://dribbble.com/themefisher"><i class="tf-ion-social-dribbble-outline"></i></a></li>
-						<li><a href="https://pinterest.com/themefisher"><i class="tf-ion-social-pinterest-outline"></i></a></li>
-					</ul>
-				</div>
+		<script type="text/javascript" src="/meghna-premium/plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>  }}
+    <!-- Custom js -->
+    <script type="text/javascript" src="/js/script.js"></script>
 
-				<div class=" text-center">
-					<p>Design And Developed by the coolest developers on the planet </p>
-				</div>
-			</div> 
-		</div> 
-	</div> 
-</footer> 
-  <!-- Render script for logged in users only -->
-  {{#if logged_in}}
-  <script src="/js/logout.js"></script>
-  {{/if}}
-    </body>
-	</html>
+    <footer id="footer" class="bg-one">
+      <div class="container">
+        <div class="row wow fadeInUp" data-wow-duration="500ms">
+          <div class="col-lg-12">
+            <div class="social-icon">
+              <ul class="list-inline">
+                <li><a href="https://facebook.com/themefisher"><i
+                      class="tf-ion-social-facebook"
+                    ></i></a></li>
+                <li><a href="https://twitter.com/themefisher"><i
+                      class="tf-ion-social-twitter"
+                    ></i></a></li>
+                <li><a
+                    href="https://www.youtube.com/channel/UCx9qVW8VF0LmTi4OF2F8YdA"
+                  ><i class="tf-ion-social-youtube"></i></a></li>
+                <li><a href="https://dribbble.com/themefisher"><i
+                      class="tf-ion-social-dribbble-outline"
+                    ></i></a></li>
+                <li><a href="https://pinterest.com/themefisher"><i
+                      class="tf-ion-social-pinterest-outline"
+                    ></i></a></li>
+              </ul>
+            </div>
+
+            <div class="text-center">
+              <p>Design And Developed by the coolest developers on the planet
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Render script for logged in users only -->
+    {{#if logged_in}}
+      <script src="/js/logout.js"></script>
+    {{/if}}
+  </body>
+</html>
