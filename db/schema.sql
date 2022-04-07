@@ -21,13 +21,12 @@ CREATE TABLE workout_record (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     user_id INT, -- Needs to link to the user
     workout_length INT NOT NULL, -- Code to write length of total workout
-    exercise_ids VARCHAR (1000), -- Is going to be an array
     workout_date INT NOT NULL -- Needs to be a date
 );
 
 CREATE TABLE exercise_record (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    sets INT NOT NULL, -- Want to be a number 0-5 only
+    sets INT NOT NULL, -- Want to be a number 0-5 only (maybe (5))
     exercise_id INT NOT NULL,
     workout_id INT NOT NULL,
     unit VARCHAR(2), -- Either kg or lbs
@@ -40,5 +39,5 @@ CREATE TABLE exercise_record (
     weight_2 INT,
     weight_3 INT,
     weight_4 INT,
-    weight_5 INT,
+    weight_5 INT
 );
