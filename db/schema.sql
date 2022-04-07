@@ -1,3 +1,4 @@
+
 DROP DATABASE IF EXISTS weight_a_minute;
 CREATE DATABASE weight_a_minute;
 USE weight_a_minute;
@@ -41,3 +42,6 @@ CREATE TABLE exercise_record (
     weight_4 INT,
     weight_5 INT
 );
+=======
+DROP DATABASE IF EXISTS WeightAMinute_db;
+CREATE DATABASE WeightAMinute_db;

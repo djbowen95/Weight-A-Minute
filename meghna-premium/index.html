@@ -32,7 +32,7 @@
 				<li><a href="#settings">⚙️</a></li>
 				<li><a href="#information">ℹ️ </a></li>
 				<li><a href="#tutorial">▶️</a></li>
-				<li><a href="#login">LOG IN</a></li>
+				<li><a data-toggle="modal" data-target="#login">LOG IN/SIGN UP</a></li>
 				<!-- add in my profile if logged in -->
 	{{#if logged_in}}
 				 <a href="/profile">🧑</a> |
@@ -49,7 +49,7 @@
 <!-- Video -->
 <section class="hero-area overlay" style="background-image: url('images/banner/hero-area.jpg');">
  <video autoplay muted loop class="hero-video">
-		<source src="images/banner/hero-video.mp4" type="video/mp4">
+		<source src="../public/css/video/Gym Promo video_Gym commercial_Cinematic fitness film_Gym Motivation_Fitness promo video_Sony a7III.mp4" type="video/mp4">
 	</video> 
  <div class="block">
 		<h1>Weight a Minute!</h1>
@@ -58,6 +58,59 @@
 	</div>
 </section> 
 {{{ body }}}
+
+<!-- login stuff -->
+<div class=" modal fade" id="login" role="dialog">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+<div class="row">
+	<div class="col-md-6">
+	  <h2>Login</h2>
+  
+	  <form id ="login" class="form login-form">
+		<div class="form-group">
+		  <label for="email-login">email:</label>
+		  <input class="form-input" type="text" id="email-login" />
+		</div>
+		<div class="form-group">
+		  <label for="password-login">password:</label>
+		  <input class="form-input" type="password" id="password-login" />
+		</div>
+		<div class="form-group">
+		  <button class="btn btn-primary" type="submit">login</button>
+		</div>
+	  </form>
+	</div>
+	<div class="col-md-6">
+	  <h2>Signup</h2>
+  
+	  <form class="form signup-form">
+		<div class="form-group">
+		  <label class = "boxes" for="name-signup">name:</label>
+		  <input class="form-input" type="text" id="name-signup" />
+		</div>
+		<div class="form-group">
+		  <label class = "boxes" for="email-signup">email:</label>
+		  <input class="form-input" type="text" id="email-signup" />
+		</div>
+		<div class="form-group">
+		  <label class = "boxes" for="password-signup">password:</label>
+		  <input class="form-input" type="password" id="password-signup" />
+		</div>
+		<div class="form-group">
+		  <button class="btn btn-primary" type="submit">signup</button>
+		</div>
+	  </form>
+	</div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <script src="../public/js/login.js"></script>
+
+
 <section class="bg-one about section">
 	<div class="container">
 		<div class="row">
