@@ -84,9 +84,7 @@ h6 {
 p {
   font-family: "Quattrocento Sans", sans-serif;
 }
-#SUp{
-background-color: pink;
-}
+
   /* Basic Setup */
 ::-moz-selection {
   /* Code for Firefox */
@@ -649,7 +647,7 @@ form .form-label {
 }
 
 form .form-input {
-  width: 100%;
+  width: auto;
   padding: 0.75rem;
   color: #1a1a1a;
   background-color: #ffffff;
@@ -1517,7 +1515,7 @@ form [type='radio'] {
 }
 
 .social-icon ul li a i {
-  color: #55606a;
+
   display: inline-block;
   font-size: 32px;
   line-height: 70px;
@@ -1567,9 +1565,9 @@ form [type='radio'] {
 
 /* Fatumo's History page */
 
-* {
+/* * {
   background-color: rgb(155, 155, 158);
-}
+} */
 
 body {
 margin: 0;

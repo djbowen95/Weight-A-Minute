@@ -20,7 +20,7 @@ router.get('/', async (req, res) => {
 router.get('/signUp', (req, res) => {
   // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
-    res.redirect('/');
+    res.redirect('/all');
     return;
   }
   res.render('signUp');
@@ -44,11 +44,11 @@ router.get('/progress', (req, res) => {
 
 // bring in dashboard page
 router.get('/dashboard', (req, res) => {
-  // If the user is already logged in, redirect the request to another route
-  if (req.session.logged_in) {
-    res.redirect('/select');
-    return;
-  }
+  // // If the user is already logged in, redirect the request to another route
+  // if (req.session.logged_in) {
+  //   res.redirect('/select');
+  //   return;
+  // }
   res.render('dashboard');
 });
 
