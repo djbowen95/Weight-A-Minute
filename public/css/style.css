@@ -496,6 +496,14 @@ form [type='radio'] {
 
 
 /* Navigation*/
+
+#nav {
+  display: flex;
+  flex-direction: row;
+}
+.navlist{
+  padding-right: 20px;
+}
 .navigation {
   background-color: #1d2024;
   width: 100%;
@@ -800,9 +808,15 @@ form [type='radio'] {
 }
 
   /* Footer section */
+.icons{
+  padding: 20px;
+}
+
 
 .social-icon {
   padding: 60px 0 35px;
+  display:flex;
+  justify-content: center;
 }
 
 .social-icon ul {
@@ -1040,7 +1054,7 @@ html {
 
 .container {
   margin: 0 auto;
-  padding: 50px 0 0;
+  /* padding: 50px 0 0; */
   max-width: 960px;
   width: 100%;
 }
