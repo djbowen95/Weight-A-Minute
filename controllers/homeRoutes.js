@@ -26,10 +26,10 @@ router.get('/signUp', (req, res) => {
   res.render('signUp');
 });
 
-router.get('/addExcersise', (req, res) => {
+// router.get('/addExcersise', (req, res) => {
 
-  res.render('addExcersise');
-});
+//   res.render('addExcersise');
+// });
 
 router.get('/history', (req, res) => {
 
