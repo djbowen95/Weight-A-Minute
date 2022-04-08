@@ -38,8 +38,10 @@ router.get('/addExcersise', (req, res) => {
     res.redirect('/signUp');
     return;
   }
+  // if session logged in already just give the page
+  if (req.session.logged_in) {
   res.render('addExcersise');
-});
+}});
 
 //  give me the history page if not logged in go to sign up page
 router.get('/history', (req, res) => {
