@@ -1584,7 +1584,7 @@ form [type='radio'] {
 }
 
 body {
-  background: rgb(255, 255, 255);
+  background: rgb(73, 63, 63);
 }
 
 section {
@@ -1745,10 +1745,6 @@ section {
     border: none;
     box-shadow: 0 0 20px rgb(255, 255, 255) ;
 }
-.service{
-  min-height: 100vh;
-  text-align: center;
-}
 
 .btn1{
   cursor: pointer;
@@ -1766,14 +1762,4 @@ section {
   padding: .5rem 1.5rem;
   border: 0.1rem solid #aaa;
   border-radius: .5rem;
-}
-.service{
-  min-height: 100vh;
-  text-align: center;
-}
-.service .box-container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
 }
