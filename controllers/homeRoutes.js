@@ -78,11 +78,15 @@ router.get('/aboutme', (req, res) => {
   res.render('aboutme');
 });
 
+
 router.get('/profile', (req, res) => {
   res.render('profile');
 });
 
 
+router.get('/addExcersise', (req, res) => {
+  res.render('profile');
+});
 
 
 
