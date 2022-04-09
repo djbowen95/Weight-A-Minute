@@ -1,5 +1,5 @@
 const sequelize = require('../config/connection');
-const { User } = require('../models/User');
+const User = require('../models/User');
 const { History } = require('../models/History');
 
 const userData = require('./userData.json');
@@ -15,20 +15,18 @@ const seedDatabase = async () => {
   //   for (const project of projectData) {
   //   await Project.create({
   //     ...project,
-  //     user_id: users[Math.floor(Math.random() * users.length)].id,
+  //     user_id: users[Math.fl/oor(Math.random() * users.length)].id,
   //   });
   // }
 
   
-seedDatabase();
 }
   const SeedDatabase = async () => {
   const historyInfo = await History.bulkCreate(HistoryData, {
     individualHooks: true,
     returning: true,
   });
-  SeedDatabase();
 }
-
-  process.exit(0);
+seedDatabase()
+SeedDatabase();
 

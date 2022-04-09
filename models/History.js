@@ -1,4 +1,4 @@
-const { Model, DataTypes } = require('sequelize');
+const Model = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
@@ -8,7 +8,7 @@ class History extends Model {
   }
 }
 
-History.init(
+History.init (
   {
     id: {
       type: DataTypes.INTEGER,
@@ -35,6 +35,7 @@ History.init(
         autoIncrement: true,
       },
   },
+  );
 //   {
 //     hooks: {
 //       beforeCreate: async (newUserData) => {
@@ -52,6 +53,6 @@ History.init(
 //     underscored: true,
 //     modelName: 'user',
 //   }
-);
+
 
 module.exports = History;

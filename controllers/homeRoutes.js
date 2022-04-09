@@ -68,8 +68,10 @@ router.get('/dashboard', (req, res) => {
     res.redirect('/signUp');
     return;
   }
-  res.render('dashboard');
-});
+  res.render('dashboard', 
+  // {db_data: mysql_data});;
+// }
+)});
 
 //  give me the about me page
 router.get('/aboutme', (req, res) => {
