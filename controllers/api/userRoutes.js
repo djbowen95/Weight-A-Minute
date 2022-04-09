@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const User = require('../../models');
+const ExerciseRecord = require('../../models/ExerciseRecord');
 
 router.post('/', async (req, res) => {
   try {
@@ -15,8 +16,21 @@ console.log("poo")
     res.status(400).json(err);
   }
 });
+router.post('/', async (req, res) => {
+  try {
+    const userData = await User.create(req.body);
+console.log("poo")
+    req.session.save(() => {
+      req.session.user_id = userData.id;
+      req.session.logged_in = true;
 
-router.post('/login', async (req, res) => {
+      res.status(200).json(userData);
+    });
+  } catch (err) {
+    res.status(400).json(err);
+  }
+});
+router.post('/', async (req, res) => {
   try {
     const userData = await User.findOne({ where: { email: req.body.email } });
 
