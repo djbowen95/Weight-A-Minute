@@ -15,7 +15,7 @@ ExerciseRecord.init(
             type: DataTypes.INTEGER,
             allowNull: false,
             validate: {
-                min: 0,
+                min: 1,
                 max: 5
             }
         },
@@ -30,33 +30,54 @@ ExerciseRecord.init(
                 }
             }
         },
-        
-        
+        reps1: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+        },
+        reps2: {
+            type: DataTypes.INTEGER,
+            allowNull: true
+        },
+        reps3: {
+            type: DataTypes.INTEGER,
+            allowNull: true
+        },
+        reps4: {
+            type: DataTypes.INTEGER,
+            allowNull: true
+        },
+        reps5: {
+            type: DataTypes.INTEGER,
+            allowNull: true
+        },
+        weight1: {
+            type: DataTypes.INTEGER,
+            allowNull: true,
+        },
+        weight2: {
+            type: DataTypes.INTEGER,
+            allowNull: true,
+        },
+        weight3: {
+            type: DataTypes.INTEGER,
+            allowNull: true,
+        },
+        weight4: {
+            type: DataTypes.INTEGER,
+            allowNull: true,
+        },
+        weight5: {
+            type: DataTypes.INTEGER,
+            allowNull: true,
+        }
         },
         {
             sequelize,
             timestamps: false,
             freezeTableName: true,
             underscored: true,
-            modelName: 'ExerciseBank'
+            modelName: 'ExerciseRecord'
         }
     );
     
     module.exports = ExerciseRecord;
-
-    /*
-    sets INT NOT NULL, -- Want to be a number 0-5 only (maybe (5))
-    exercise_id INT NOT NULL,
-    workout_id INT NOT NULL,
-    unit VARCHAR(2), -- Either kg or lbs
-    reps_1 INT,
-    reps_2 INT,
-    reps_3 INT,
-    reps_4 INT,
-    reps_5 INT,
-    weight_1 INT,
-    weight_2 INT,
-    weight_3 INT,
-    weight_4 INT,
-    weight_5 INT
-    */

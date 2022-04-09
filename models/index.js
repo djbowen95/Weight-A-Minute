@@ -8,7 +8,7 @@ WorkoutRecord.belongsTo(User, {
     onDelete: "CASCADE",
 });
 
-ExerciseRecord.belongsTo(WorkOutRecord, {
+ExerciseRecord.belongsTo(WorkoutRecord, {
     foreignKey: "workout_id",
     onDelete: "CASCADE"
 });
@@ -27,4 +27,4 @@ ExerciseRecord.belongsTo(ExerciseBank, {
 //   foreignKey: 'user_id'
 // });
 
-module.exports = { User, WorkoutRecord, ExerciseBank };
+module.exports = { User, WorkoutRecord, ExerciseBank, ExerciseRecord };
