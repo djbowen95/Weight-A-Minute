@@ -90,21 +90,6 @@ router.get('/addExcersise', (req, res) => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 module.exports = router;
 
 
