@@ -1580,7 +1580,7 @@ form [type='radio'] {
   text-transform: capitalize;
   -webkit-transition: all .2s linear;
   transition: all .2s linear;
- 
+
 }
 
 body {
@@ -1944,3 +1944,4 @@ section {
 }
 
 
+}
