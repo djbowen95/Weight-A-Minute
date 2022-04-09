@@ -35,6 +35,8 @@ User.init(
         len: [8],
       },
     },
+    // Need a kg / lbs category like in the exercise record. Want user to be able to check / change it.
+    // Want a Date of Birth form at sign up?
   },
   {
     hooks: {
