@@ -2,24 +2,25 @@
 <html class="no-js">
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 	<title>Weight IT</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="plugins/themefisher-font/style.css">
 	<!-- bootstrap.min css -->
-	<link rel="stylesheet" href="plugins/bootstrap/dist/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="plugins/bootstrap/dist/css/bootstrap.min.css">
 	<!-- Animate.css -->
-	<link rel="stylesheet" href="plugins/animate-css/animate.css">
+	<!-- <link rel="stylesheet" href="plugins/animate-css/animate.css">
 	<!-- Magnific popup css -->
-	<link rel="stylesheet" href="plugins/magnific-popup/dist/magnific-popup.css">
+	<!-- <link rel="stylesheet" href="plugins/magnific-popup/dist/magnific-popup.css">
 	<!-- Main Stylesheet -->
-	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="css/style.css">
+-->
 </head>
 
 <body id="body" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-	<!-- nav -->
+	<!-- nav 
 	<header id="navigation" class="navbar navigation">
         <div class="container">
             <div class="navbar-header">
@@ -32,8 +33,8 @@
 				<li><a href="#settings">⚙️</a></li>
 				<li><a href="#information">ℹ️ </a></li>
 				<li><a href="#tutorial">▶️</a></li>
-				<li><a href="#login">LOG IN</a></li>
-				<!-- add in my profile if logged in -->
+				<li><a href="#login">LOG IN</a></li> -->
+				<!-- add in my profile if logged in --> <!--
 	{{#if logged_in}}
 				 <a href="/profile">🧑</a> |
 				 <button class="no-button" id="logout">logout</button>
@@ -42,7 +43,7 @@
 				 {{/if}}
             </ul>
         </nav>
-
+	-->
       </div>
   </header>
 
@@ -51,11 +52,11 @@
 	<div id="create-exercise-box"class="col-md-6">
 	  <h2>Create a New Exercise Record:</h2>
 
-	  <div id="image-selector">Placeholder: select an exercise image here.</div>
+	<div id="image-selector">Placeholder: select an exercise image here.</div>
  
-	  <form class="form">
+	<form class="form">
 		<!-- Exercise Metadata - Exercise name, number of sets -->
-		<div id="main-questions"></div>
+	<div id="main-questions">
 		<h3> What is the name of the exercise?</h3>
 		<div class="form-group">
 			<label class ="boxes" for="exercise-name">Name: </label>
@@ -65,12 +66,12 @@
 		<h3>How many sets in total?</h3>
 		<div class="form-group">
 		  <label class = "boxes" for="sets-input">Sets</label>
-		  <input class="form-input" type="number" id="sets-input"/>
+		  <input class="form-input" type="range" min="0" max="5" id="sets-input"/>
 		</div>
-		</div>
+	</div>
 
 		<!-- Reps 1 - 5-->
-		<div id="rep-form">
+	<div id="rep-form">
 		<h3>How many reps for each set?</h3>
 		<div class="form-group">
 			<label class = "boxes" for="reps-1-input">1:</label>
@@ -92,10 +93,10 @@
 			<label class = "boxes" for="reps-5-input">5:</label>
 			<input class="form-input" type="number" id="reps-5-input"/>
 		  </div>
-		</div>
+	</div>
 		
 		<!-- Weight 1 - 5-->
-		<div id="weight-form">
+	<div id="weight-form">
 		<h3>What weight did you use for each set?</h3>
 		<div class="form-group">
 			<label class = "boxes" for="weight-1-input">1:</label>
@@ -120,19 +121,18 @@
 	</div>
 
 		<div class="form-group">
-		  <button class="btn btn-primary" type="submit">Complete exercise!</button>
+		  <button class="btn btn-primary" id="create-exercise-button" type="submit">Complete exercise!</button>
 		</div>
-	  </form>
+	</form>
 	</div>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
+  <script src="../public/js/createExercise.js"></script>
+</div>
+
 
 <!-- SET FOOTER -->
 
 <footer id="footer" class="bg-one">
+	<!-- 
 	<div class="container">
 		<div class="row wow fadeInUp" data-wow-duration="500ms">
 			<div class="col-lg-12">
@@ -152,6 +152,7 @@
 			</div> 
 		</div> 
 	</div> 
+-->
 </footer> 
 	    
 
@@ -160,14 +161,14 @@
 		=====================================-->
 		
 		<!-- Main jQuery -->
-		<script type="text/javascript" src="plugins/jquery/dist/jquery.min.js"></script>
+		<!-- <script type="text/javascript" src="plugins/jquery/dist/jquery.min.js"></script>
 		<!-- Bootstrap 3.1 -->
-		<script type="text/javascript" src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+		<!-- <script type="text/javascript" src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
 		<!-- Slick Carousel -->
-		<script type="text/javascript" src="plugins/slick-carousel/slick/slick.min.js"></script>
+		<!-- <script type="text/javascript" src="plugins/slick-carousel/slick/slick.min.js"></script>
 		<!-- Magnific popup -->
-		<script type="text/javascript" src="plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+		<!-- <script type="text/javascript" src="plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
 		<!-- Custom js -->
-		<script type="text/javascript" src="../public/js/script.js"></script>
+		<!-- <script type="text/javascript" src="../public/js/script.js"></script>
     </body>
 </html>

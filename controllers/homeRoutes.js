@@ -70,6 +70,10 @@ router.get('/profile', (req, res) => {
   res.render('profile');
 });
 
+// Dan's routes
+router.get('/createNewExercise', (req, res) => {
+  res.render('createNewExercise')
+})
 
 
 
