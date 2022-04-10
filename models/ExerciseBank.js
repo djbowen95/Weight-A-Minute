@@ -24,6 +24,7 @@ ExerciseBank.init(
             validate: {
                 min: 1,
                 max: 6
+                // 1 - Chest, 2 - Back, 3 - Legs, 4 - Arms, 5 - Abs/Core - 6 - Glutes
             }
             // Need to build a library of simple icons.
             // Want this to update / refresh when an icon is clicked. 

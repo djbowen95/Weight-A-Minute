@@ -1,0 +1,34 @@
+[
+    {
+        "exerciseName": "Bench Press",
+        "icon": 1
+    },
+    {
+        "exerciseName": "Press Up",
+        "icon": 1
+    },
+    {
+        "exerciseName": "Leg Press",
+        "icon": 3
+    },
+    {
+        "exerciseName": "Leg Curl",
+        "icon": 3
+    },
+    {
+        "exerciseName": "Bicep Curl",
+        "icon": 4
+    },
+    {
+        "exerciseName": "Tricep Pushdown",
+        "icon": 4
+    },
+    {
+        "exerciseName": "Plank",
+        "icon": 5
+    },
+    {
+        "exerciseName": "Crunch",
+        "icon": 5
+    }
+]
