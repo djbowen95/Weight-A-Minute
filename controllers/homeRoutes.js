@@ -71,9 +71,16 @@ router.get('/profile', (req, res) => {
 });
 
 
+// sumaya routes //
+router.get('/newWorkout', (req, res) => {
 
+  res.render('newWorkout');
+});
 
+router.get('/followPlan', (req, res) => {
 
+  res.render('followPlan');
+});
 
 
 

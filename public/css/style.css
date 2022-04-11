@@ -1710,10 +1710,10 @@ section {
 }
 
 .box-container{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 .card{
   display:flex;
@@ -1809,7 +1809,7 @@ section {
 }
 
 .heading span {
-  font-size: 3rem;
+  font-size: 5rem;
   color:#0ea4afd2;
   background: #000;
   padding: .5rem 1.5rem;
@@ -1944,4 +1944,4 @@ section {
 }
 
 
-}
+
