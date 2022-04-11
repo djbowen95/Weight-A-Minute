@@ -4,6 +4,11 @@ const sequelize = require("../config/connection");
 
 const ExerciseRecord = sequelize.define("ExerciseRecord", {
   // Model attributes are defined here
+  exercise_id: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+    timestamps: true,
+  },
   sets: {
     type: DataTypes.INTEGER,
     allowNull: false,
@@ -14,13 +19,11 @@ const ExerciseRecord = sequelize.define("ExerciseRecord", {
     allowNull: false,
     timestamps: true,
   },
-
   workout_id: {
     type: DataTypes.INTEGER,
     allowNull: false,
     timestamps: true,
   },
-
   unit: {
     type: DataTypes.STRING(2),
     timestamps: true,

@@ -4,10 +4,10 @@ const { ExerciseRecord } = require("../../models");
 
 router.get("/", async (req, res) => {
   try {
-    // if (!req.session.logged_in) {
-    //   res.status(400).json({ message: "You are not logged in." });
-    //   return;
-    // }
+    if (!req.session.logged_in) {
+      res.status(400).json({ message: "You are not logged in." });
+      return;
+    }
     const exercise_records = await ExerciseRecord.findAll();
 
     console.log(
