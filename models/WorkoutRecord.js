@@ -11,8 +11,7 @@ WorkoutRecord.init(
             autoIncrement: true
         },
         date: {
-            type: DataTypes.DATE,
-            get() {return moment(this.getDataValue('date')).format('DD/MM/YYYY h:mm:ss')}
+            type: DataTypes.STRING,
         },
         length: {
             type: DataTypes.INTEGER,
