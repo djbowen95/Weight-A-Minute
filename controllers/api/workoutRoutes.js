@@ -15,6 +15,8 @@ router.post('/', async (req, res) => {
     }
 });
 
+// Potentially an update function to update length.
+
 // Retrieve a record, make it into a javascript object.
 // This second one might be an exerciseRecordRoute or history API function?
 
