@@ -88,9 +88,28 @@ router.get('/createNewExercise', (req, res) => {
   res.render('createNewExercise')
 })
 
-router.get('/addExcersise', (req, res) => {
-  res.render('profile');
+// sumaya routes //
+router.get('/newWorkout', (req, res) => {
+
+  res.render('newWorkout');
 });
+
+router.get('/followPlan', (req, res) => {
+
+  res.render('followPlan');
+});
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
