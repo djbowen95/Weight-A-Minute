@@ -5,6 +5,7 @@ const withAuth = require('../../utils/auth');
 // Post new exercise record.
 router.post('/', async (req, res) => {
     try {
+        console.log("Request recieved.")
         // Make exercise name all caps (so that there are no repeated exercises in the bank).
         const newExerciseName = req.body.exerciseName.toUpperCase();
 
@@ -31,6 +32,9 @@ router.post('/', async (req, res) => {
 
 // Export this function? 
 function createExerciseRecord(body, bank_id, workout_id) {
+    console.log("Create Exercise Record running");
+    console.log(bank_id, workout_id);
+    console.log(body.unit);
     return {
         "sets": body.sets,
         "unit": body.unit,

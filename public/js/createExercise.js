@@ -1,4 +1,5 @@
-const fs = require("fs");
+// Collect data from exercise dropdown:
+const exerciseType = document.querySelector('#icon-input');
 
 // Collect data from exercise name
 const exerciseName = document.querySelector('#exercise-name');
@@ -20,39 +21,45 @@ const weight3 = document.querySelector('#weight-3-input');
 const weight4 = document.querySelector('#weight-4-input');
 const weight5 = document.querySelector('#weight-5-input');
 
+// Collect unit.
+const unitInput = document.querySelector('#unit-input');
+
 // Date (Needs to be with Sumaya's page);
 // ID for Workout Data (Needs to be with Sumaya's page);
 
 // BONUS: Collect data / create option buttons
 const createExerciseButton = document.querySelector('#create-exercise-button');
+
 createExerciseButton.addEventListener('click', () => {
     event.preventDefault();
     const newExerciseRecord = {
         exerciseName: exerciseName.value,
-        numberOfSets: sets.value,
-        rep1: rep1.value,
-        rep2: rep2.value,
-        rep3: rep3.value,
-        rep4: rep4.value,
-        rep5: rep5.value,
+        sets: sets.value,
+        reps1: rep1.value,
+        reps2: rep2.value,
+        reps3: rep3.value,
+        reps4: rep4.value,
+        reps5: rep5.value,
         weight1: weight1.value,
         weight2: weight2.value,
         weight3: weight3.value,
         weight4: weight4.value,
-        weight5: weight5.value
+        weight5: weight5.value,
+        unit: unitInput.value,
+        icon: exerciseType.value 
     }
     pushNewData(newExerciseRecord);
-    console.log("New record added");
 });
+const pushNewData = async (newExerciseRecord) => {
+    const response = await fetch('/api/exercise', {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newExerciseRecord),
+    });
 
-function pushNewData (newExerciseRecord) {
-    fs.readFile('./exercisedata.json', (err, data) => {
-        if (err) {
-            console.log(err);
-        } else {
-            const database = JSON.parse(data);
-            database.push(newExerciseRecord);
-            fs.writeFileSync('./exercisedata.json'. JSON.stringify(database));
-        }
-    })
+    if (response.ok) {
+        console.log("Success");
+    };
 };

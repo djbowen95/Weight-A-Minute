@@ -7,6 +7,19 @@
 	<form class="form">
 		<!-- Exercise Metadata - Exercise name, number of sets -->
 	<div id="main-questions">
+		<h3>Which body part do you want to workout?</h3>
+		<div class="form-group">
+			<label class="boxes" for="icon-input">Body part:</label>
+			<select name="icon-input" id="icon-input">
+				<option value="1">Chest</option>
+				<option value="2">Back</option>
+				<option value="3">Legs</option>
+				<option value="4">Arms</option>
+				<option value="5">Core</option>
+				<option value="6">Glutes</option>
+			</select>
+		</div>
+
 		<h3> What is the name of the exercise?</h3>
 		<div class="form-group">
 			<label class ="boxes" for="exercise-name">Name: </label>
@@ -15,7 +28,7 @@
 
 		<h3>How many sets in total?</h3>
 		<div class="form-group">
-		  <label class = "boxes" for="sets-input">Sets</label>
+		  <label class = "boxes" for="sets-input">Sets (1 - 5):</label>
 		  <input class="form-input" type="range" min="0" max="5" id="sets-input"/>
 		</div>
 	</div>
@@ -67,6 +80,13 @@
 		<div class="form-group">
 			<label class = "boxes" for="weight-5-input">5:</label>
 			<input class="form-input" type="number" id="weight-5-input"/>
+		</div>
+		<div class="form-group">
+			<label class="boxes" for="unit-input"> Unit:</label>
+			<select name="unit-input" id="unit-input">
+				<option value="kg">kg</option>
+				<option value="lb">lb</option>
+			</select>
 		</div>
 
 		<!-- Still need a unit! --> 
