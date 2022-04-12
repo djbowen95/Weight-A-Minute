@@ -11,12 +11,10 @@ WorkoutRecord.init(
             autoIncrement: true
         },
         date: {
-            type: DataTypes.STRING,
+            type: DataTypes.DATE,
+            allowNull: false,
+            defaultValue: DataTypes.NOW
         },
-        length: {
-            type: DataTypes.INTEGER,
-            allowNull: false
-        }
     },
     {
         sequelize,
