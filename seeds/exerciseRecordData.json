@@ -1,0 +1,54 @@
+[
+    {
+        "sets": 3,
+        "unit": "kg",
+        "workout_id": 1,
+        "bank_id": 1,
+        "reps1": 10,
+        "reps2": 10,
+        "reps3": 10,
+        "weight1": 20,
+        "weight2": 20,
+        "weight3": 20
+    },
+    {
+        "sets": 4,
+        "unit": "kg",
+        "workout_id": 1,
+        "bank_id": 2,
+        "reps1": 8,
+        "reps2": 10,
+        "reps3": 12,
+        "reps4": 12,
+        "weight1": 15,
+        "weight2": 15,
+        "weight3": 15,
+        "weight4": 25
+    },
+    {
+        "sets": 4,
+        "unit": "kg",
+        "workout_id": 1,
+        "bank_id": 3,
+        "reps1": 8,
+        "reps2": 10,
+        "reps3": 12,
+        "reps4": 12,
+        "weight1": 8,
+        "weight2": 8,
+        "weight3": 8,
+        "weight4": 10
+    },
+    {
+        "sets": 3,
+        "unit": "kg",
+        "workout_id": 1,
+        "bank_id": 1,
+        "reps1": 10,
+        "reps2": 10,
+        "reps3": 10,
+        "weight1": 20,
+        "weight2": 20,
+        "weight3": 20
+    }
+]
