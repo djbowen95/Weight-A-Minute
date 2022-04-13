@@ -32,5 +32,8 @@
     "require": "^2.4.20",
     "sequelize": "^6.17.0",
     "start": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
