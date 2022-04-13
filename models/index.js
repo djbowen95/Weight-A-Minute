@@ -16,15 +16,5 @@ ExerciseRecord.belongsTo(WorkoutRecord, {
 ExerciseRecord.belongsTo(ExerciseBank, {
   foreignKey: "bank_id",
   onDelete: "CASCADE",
-});
-
-// Signup.hasMany(Project, {
-//   foreignKey: 'user_id',
-//   onDelete: 'CASCADE'
-// });
-
-// Project.belongsTo(Signup, {
-//   foreignKey: 'user_id'
-// });
 
 module.exports = { User, WorkoutRecord, ExerciseBank, ExerciseRecord };
