@@ -8,6 +8,7 @@ router.get("/", async (req, res) => {
     //   res.status(400).json({ message: "You are not logged in." });
     //   return;
     // }
+    console.log("hello");
     const exercise_records = await ExerciseRecord.findAll();
 
     console.log(
