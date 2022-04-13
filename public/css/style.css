@@ -112,6 +112,8 @@ color: rgb(245, 244, 244) !important;
 .image-black{
   /* height: 100%;
   width: 100%; */
+  margin:-25px;
+  width: 7rem;
   
 }
 h1,
@@ -1056,10 +1058,15 @@ section {
 }
 
 .features  .content p {
-  line-height: 2;
-  font-size: 1.5rem;
+  /* line-height: 2;
+  font-size: 1.5rem; */
   color: #aaa;
   padding: 1rem 0;
+}
+
+.sumrow {
+  display: flex;
+   flex-direction: row;
 }
 
 .box-container{
