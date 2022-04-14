@@ -33,11 +33,9 @@ app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
 app.get('/s3Url', async (req, res) => {
-  const url = await generateUploadURL()
+  const url = await generateUploadURL
     res.send({url})
 })
-
-
 
 
 app.use(express.json());
@@ -45,8 +43,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 // app.use(express.static('front'))
 app.use(routes);
-
-
 
 
 sequelize.sync({ force: false }).then(() => {
