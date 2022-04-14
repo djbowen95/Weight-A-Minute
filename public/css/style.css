@@ -261,6 +261,8 @@ a:hover {
 
 .bg-one {
   background-color: #353b43;
+  display: flex;
+    flex-direction: row;
 }
 
 .bg-dark {
@@ -694,6 +696,7 @@ form [type='radio'] {
   /* About us section */
 
 .about .block {
+  height: 22rem;
   background: #242930;
   padding: 30px;
   border-bottom: 2px solid transparent;
