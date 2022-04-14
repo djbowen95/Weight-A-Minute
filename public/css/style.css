@@ -477,6 +477,9 @@ a:hover {
 background-color: red;
 }
 
+#login {
+  padding-left: 20rem;
+}
 
 .boxes {
   padding-right: 30px;
@@ -487,6 +490,9 @@ background-color: red;
   flex-direction: row;
 
 }
+/* .signup-form{
+  margin-left: 5rem;
+} */
 form .form-group {
   display: block;
   width: 50%;
@@ -785,6 +791,9 @@ form [type='radio'] {
 @media (max-width: 768px) {
   .member-photo {
     text-align: center;
+  }
+  #login {
+    padding-left: 0;
   }
 }
 
@@ -1553,6 +1562,7 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6 {
+
 	margin:0;
 }
 
