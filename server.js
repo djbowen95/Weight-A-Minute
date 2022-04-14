@@ -7,8 +7,6 @@ const helpers = require('./utils/helpers');
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
-
-// import express from 'express'
 const { generateUploadURL } = require ('./s3')
 
 // {{!-- hn new --}}
@@ -33,7 +31,7 @@ app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
 app.get('/s3Url', async (req, res) => {
-  const url = await generateUploadURL
+  const url = await generateUploadURL()
     res.send({url})
 })
 
@@ -48,3 +46,4 @@ app.use(routes);
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Wahoo! App Now listening at port 3001'));
 });
+

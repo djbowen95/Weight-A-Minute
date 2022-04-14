@@ -6,7 +6,7 @@ const randomBytes = promisify(crypto.randomBytes)
 
 dotenv.config()
 
-const region = "us-west-2"
+const region = "eu-west-2"
 const bucketName = "weightaminute"
 const accessKeyId = process.env.AWS_ACCESS_KEY_ID
 const secretAccessKey = process.env.AWS_SECRET_ACCESS_KEY
@@ -32,6 +32,9 @@ const s3 = new aws.S3({
   
   const uploadURL = await s3.getSignedUrlPromise('putObject', params)
   return uploadURL
-}
+};
+
+module.exports = { generateUploadURL };
+
 
 // {{!-- hn new --}}
