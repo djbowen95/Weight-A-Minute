@@ -16,5 +16,10 @@ ExerciseRecord.belongsTo(WorkoutRecord, {
 ExerciseRecord.belongsTo(ExerciseBank, {
   foreignKey: "bank_id",
   onDelete: "CASCADE",
+});
 
-module.exports = { User, WorkoutRecord, ExerciseBank, ExerciseRecord };
+
+
+module.exports = {User, WorkoutRecord, ExerciseBank, ExerciseRecord};
+
+// THIS IS THE ERROR - USER ONLY WORKS ON ITS OWN

@@ -32,16 +32,6 @@ router.get('/signUp', (req, res) => {
   res.render('signUp');
 });
 
-// give me the add excersise page if not logged in go to sign up page
-router.get('/addExcersise', (req, res) => {
-  if (!req.session.logged_in) {
-    res.redirect('/signUp');
-    return;
-  }
-  // if session logged in already just give the page
-  if (req.session.logged_in) {
-  res.render('addExcersise');
-}});
 
 //  give me the history page if not logged in go to sign up page
 router.get('/history', (req, res) => {
@@ -90,7 +80,10 @@ router.get('/createNewExercise', (req, res) => {
 
 // sumaya routes //
 router.get('/newWorkout', (req, res) => {
-
+  if (!req.session.logged_in) {
+    res.redirect('/signUp');
+    return;
+  }
   res.render('newWorkout');
 });
 
@@ -101,59 +94,4 @@ router.get('/followPlan', (req, res) => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 module.exports = router;
-
-
-// router.get('/project/:id', async (req, res) => {
-//   try {
-//     const projectData = await Project.findByPk(req.params.id, {
-//       include: [
-//         {
-//           model: User,
-//           attributes: ['name'],
-//         },
-//       ],
-//     });
-
-//     const project = projectData.get({ plain: true });
-
-//     res.render('project', {
-//       ...project,
-//       logged_in: req.session.logged_in
-//     });
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// });
-
-// // Use withAuth middleware to prevent access to route
-// router.get('/profile', withAuth, async (req, res) => {
-//   try {
-//     // Find the logged in user based on the session ID
-//     const userData = await User.findByPk(req.session.user_id, {
-//       attributes: { exclude: ['password'] },
-//       include: [{ model: Project }],
-//     });
-
-//     const user = userData.get({ plain: true });
-
-//     res.render('profile', {
-//       ...user,
-//       logged_in: true
-//     });
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// });

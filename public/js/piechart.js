@@ -1,4 +1,4 @@
-// const { User } = require('../models/User');
+
 
 anychart.onDocumentReady(function() {
 
