@@ -1,15 +1,11 @@
-<div class="row">
-	<div id="create-exercise-box"class="col-md-6">
-	  <h2>Create a New Exercise Record:</h2>
-
-	<div id="image-selector">Placeholder: select an exercise image here.</div>
- 
-	<form class="form">
-		<!-- Exercise Metadata - Exercise name, number of sets -->
-	<div id="main-questions">
-		<h3>Which body part do you want to workout?</h3>
+<link rel="stylesheet" href="/css/form.css">
+<div class="all">
+<div class="container">
+    <h2>Create a New Exercise Record</h2>
+    <div id="main-questions">
+		<h4>Which body part do you want to workout?</h4>
 		<div class="form-group">
-			<label class="boxes" for="icon-input">Body part:</label>
+			<label class="boxes" for="icon-input"></label>
 			<select name="icon-input" id="icon-input">
 				<option value="1">Chest</option>
 				<option value="2">Back</option>
@@ -19,13 +15,11 @@
 				<option value="6">Glutes</option>
 			</select>
 		</div>
-
-		<h3> What is the name of the exercise?</h3>
+		<h3 class="exercise_name">What is the name of the exercise?</h3>
 		<div class="form-group">
 			<label class ="boxes" for="exercise-name">Name: </label>
 			<input class="form-input" type="text" id="exercise-name"/>
 		</div>
-
 		<h3>How many sets in total?</h3>
 		<div class="form-group">
 		  <label class = "boxes" for="sets-input">Sets (1 - 5):</label>
@@ -57,8 +51,7 @@
 			<input class="form-input" type="number" id="reps-5-input"/>
 		  </div>
 	</div>
-		
-		<!-- Weight 1 - 5-->
+	<!-- Weight 1 - 5-->
 	<div id="weight-form">
 		<h3>What weight did you use for each set?</h3>
 		<div class="form-group">
@@ -82,20 +75,20 @@
 			<input class="form-input" type="number" id="weight-5-input"/>
 		</div>
 		<div class="form-group">
-			<label class="boxes" for="unit-input"> Unit:</label>
+            <h4>Unit for weight</h4>
+			<label class="boxes" for="unit-input"></label>
 			<select name="unit-input" id="unit-input">
 				<option value="kg">kg</option>
 				<option value="lb">lb</option>
 			</select>
 		</div>
-
 		<!-- Still need a unit! --> 
 	</div>
 
 		<div class="form-group">
-		  <button class="btn btn-primary" id="create-exercise-button" type="submit">Complete exercise!</button>
+		  <button class="complete-btn" id="create-exercise-button" type="submit">Complete exercise!</button>
+         
 		</div>
 	</form>
 	</div>
-  <script src="/js/createExercise.js"></script>
-</div>
+	<script src="script.js"></script>
