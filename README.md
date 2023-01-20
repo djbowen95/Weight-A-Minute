@@ -11,14 +11,14 @@
 * * [01A. Project History](#project-history)
 * * [01B. Demonstration Video](#demonstration-video)
 * * [01C. Live Deployment](#live-deployment)
+* [02. Usage](#usage)
+* * [04A-E. Key Usage Features](#key-usage-a)
 * [02. Key Features](#key-features)
 * * [02A-E Key Feature A - E](#key-feature-a)
 * [03. Installation](#installation)
 * * [03A. Prerequisites](#prerequisities)
 * * [03B. Cloning the Repository](#cloning-the-repository)
 * * [03C. Running the Project Locally](#running-the-project-locally)
-* [04. Usage](#usage)
-* * [04A-E. Key Usage Features](#key-usage-a)
 * [05. Testing](#testing)
 * [06. Version History](#version-history)
 * [07. License](#license)
@@ -29,20 +29,40 @@
 
 ## About
 ### Project History
+ - Coming up with the idea
+ - Development cycle
+ - Working with / learning version control
+ - Getting Ready to present
 ### Demonstration Video
+ - Need to find powerpoint for this one!
 ### Live Deployment
+This project was deployed on Heroku at the time we built it: however sadly now, as they have changed their free membership, it is no longer deployed with them. I'm hoping to deploy this with AWS/an EC2 instance in the near future. In the meantime - to see the project in action, please follow the installation instructions below.
+## Usage
+### Key Usage A
+- Create an Account / Sign In
+- Record a Workout
+- View a Workout
+- View a Particular Exercise
+- Add pictures to your account / track your progress visually
 ## Key Features
 ### Key Feature A
+- MySQL and Sequelize Database
+- Express routing
+- Handlebars template engine
+- Responsive design
+- Bcrypt / user encryption
+- Third party templating (?)
 ## Installation
 ### Prerequisities
 ### Cloning the Repository
 ### Running the Project Locally
-## Usage
-### Key Usage A
 ## Testing
+- No tests yet - but link to tests. Note that this is the part of the course we learned testing, so would be particularly great to create some tests once its debugged.
 ## Version History
 ### Version 1.0.0
+BootCamp version.
 ## License
+MIT I think!
 ## Contribution
 ### Contribution Guidelines
 ### Future Development
