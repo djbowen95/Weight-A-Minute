@@ -55,6 +55,8 @@ MODELS:
  - Workout Record: Seems simple, don't *think* I need any other properties. 
  - Is the path I want for my API route: `create Workout Record` -> `create all exercise records` -> `save`, or do I want to store the current workout in session cookies? If so do I want a timeout? This is a lot more complicated.
 
+ THE INDEX SEEMS TO HAVE A PROBLEM WITH USER. THAT SEEMS TO BE INTERFERING WITH THE WRITING/READING DATA? View note in models!!
+
 PUBLIC:
  - need icons for exercise types 
  CSS:

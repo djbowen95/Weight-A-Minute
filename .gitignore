@@ -1,6 +1,6 @@
-# Notes
-dan-notes.md
-db/oldschema.sql
+# Working folder for files only wanted locally
+# I've stored files here I've deleted from the repo, but might want to bring back quickly
+dev-bin/
 
 # Logs
 logs
