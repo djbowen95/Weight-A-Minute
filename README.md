@@ -101,7 +101,7 @@ But make the password unique.
 These instructions are for windows users.
 4. Set up docker container for mysql database (duplicate instructions / explain instructions from inst. repo?)
 5. Connect to the database from the command line: `winpty mysql -h127.0.0.1 -uroot -ppassword` (maybe changer user / password).
-6. Run the schema by entering this command to the mysql CLI: `source db/schema.sql`.
+6. Run the schema by entering this command to the mysql CLI: `source config/db/schema.sql`.
 7. Exit the mysql command-line interface.
 8. Seed the database by running `node seeds/seeds.js` from the route directory.
 9. Run `npm run start`. 
