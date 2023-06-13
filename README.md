@@ -39,6 +39,7 @@ I am rewriting the README, so it is in note form. You can read the old README (a
 - Handlebars Template Engine
 - Responsive Design / Front-End Design
 - Agile
+- Model-View-Controller
 - Object-Oriented Programming Concepts (?)
 
 - Nodemon
@@ -61,4 +62,21 @@ AWS S3: Storing user data / profile images.
 Graphs - not sure yet.
 
 7. Installation
+These are the instructions to install and run our application locally. These instructions assume you have Node and the node package manager installed; docker installed; and an SSH key set up with GitHub so you can clone a repository. 
+These instructions assume you have node and the node package manager installed. To install and run the application locally:
+1. Clone the repository. Navigate to the directory you want to save the application in. Run the command `git clone git@github.com:djbowen95/Weight-a-Minute.git`. Once installed, navigate to the directory with `cd Weight-a-Minute`.
+2. Install the node modules locally. Run `npm install` from the application's route directory.
+3. Create a .env file in the route directory. An example would be:
+`DB_NAME=weight_a_minute
+DB_PASSWORD=password
+DB_USER=root`
+But make the password unique. 
 
+These instructions are for windows users.
+4. Set up docker container for mysql database (duplicate instructions / explain instructions from inst. repo?)
+5. Connect to the database from the command line: `winpty mysql -h127.0.0.1 -uroot -ppassword` (maybe changer user / password).
+6. Run the schema by entering this command to the mysql CLI: `source db/schema.sql`.
+7. Exit the mysql command-line interface.
+8. Seed the database by running `node seeds/seeds.js` from the route directory.
+9. Run `npm run start`. 
+10. The application should now be running on PORT 3001 or the port you assigned in your .env file (?). You can view it at `http://localhost:3001` or at `http://127.0.0.1:3001/`.
