@@ -118,11 +118,3 @@ New Workout: Exercise Page for Now
 History: Just a table for now
 Healthy Tips!: Humma's Pie Chart Page
 
-1. Fix front-end routes - navigate only to complete pages, change names to sensible names.
-
-2. Have New Workout / History write and retrieve data.
-
-3. Check and annotate user stuff.
-
-4. Add the 'workout' properly / logic and organisation for that.
-

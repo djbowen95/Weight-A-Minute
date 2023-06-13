@@ -5,8 +5,31 @@ This is a group project build for the University of Birmingham Coding Bootcamp. 
 
 I am rewriting the README, so it is in note form. You can read the old README (also note form but more detailed) [here](./docs/OLD-README.md).
 
+
+TO DO LIST:
+ESSENTIAL
+1. Fix front-end routes - navigate only to complete pages, change names to sensible names. 
+1B. Also plan / replan database architecture and names (?)
+2. Fix front-end pages (html / css).
+3. Have New Exercise / History write and retrieve data.
+4. Check and annotate user stuff.
+5. Add the 'workout' properly / logic and organisation for that.
+6. Host
+
+NICE TO HAVE
+7. Enhance command-line commands / set up
+8. Add S3 so users can upload own images
+9. Graphs + Charts
+10. Tests (for controllers in particular)
+
+NOT CODING
+11. Read Me (and other documentation?)
+
+---
+Contents (for when complete)
+
 1. About the Project
-2. Meet the Developers (?)
+2. Meet the Developers
 3. Using Weight a Minute...!: Key Features
 4. Building Weight a Minute...!: What We Did / Learned
 5. Technology Stack
@@ -25,9 +48,11 @@ I am rewriting the README, so it is in note form. You can read the old README (a
 2. Meet the Developers
 
 3. Using Weight a Minute
- - Create an Account
- - Recording Your Workout
- - View Your Past Workouts
+ - Creating Your Account
+ - Recording Your First Workout
+ - Looking At Your Exercise History
+ - Changing Your Profile
+ - Visualising Your Data* (atm just pie chart)
 
 4. Building Weight a Minute
 - Node / Node Package Manager
@@ -41,6 +66,7 @@ I am rewriting the README, so it is in note form. You can read the old README (a
 - Agile
 - Model-View-Controller
 - Object-Oriented Programming Concepts (?)
+- Chart.js
 
 - Nodemon
 - Docker Containers
