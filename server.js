@@ -1,20 +1,20 @@
-const path = require('path');
+// Required modules. 
 const express = require('express');
-const session = require('express-session');
 const exphbs = require('express-handlebars');
+const session = require('express-session');
+
+const path = require('path');
 const routes = require('./controllers');
 const helpers = require('./utils/helpers');
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
-const { generateUploadURL } = require ('./s3')
-
-// {{!-- hn new --}}
+// Initialize application with express, and handlebars.
 const app = express();
 const PORT = process.env.PORT || 3001;
-// handlebars stuff
 const hbs = exphbs.create({ helpers });
 
+// Session cookies. 
 const sess = {
   secret: 'Super secret secret',
   cookie: {},
@@ -24,25 +24,22 @@ const sess = {
     db: sequelize
   })
 };
-
 app.use(session(sess));
 
+// Handlebars.
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
-app.get('/s3Url', async (req, res) => {
-  const url = await generateUploadURL()
-    res.send({url})
-})
-
-
+// Express middleware.
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 // app.use(express.static('front'))
+
+// API routes.
 app.use(routes);
 
-
+// Sequelize; listen on .env PORT or port 3001. 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Wahoo! App Now listening at port 3001'));
 });
